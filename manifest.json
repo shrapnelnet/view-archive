@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "viewArchive",
+    "version": "1.0",
+    "description": "Adds a context option to view links as an archive.",
+    "icons": {
+        "48": "static/48.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": ["menus"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"]
+        }
+    ]
+}
